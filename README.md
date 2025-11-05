@@ -1,6 +1,6 @@
 # C++/Python Project Template
 
-This is a standardized C++/Python project template for DALSA projects that will be hosted on GitHub, designed to help project owners quickly set up new projects with a consistent structure and DevOps features. Its goal is to ensure maintainability and collaboration by enforcing standards that make future contributions and usage seamless. The template integrates **Sphinx** + **Doxygen** for unified documentation of both C++ and Python packages, and uses GitHub Actions to automate the generation of web-based documentation, code rewrites to follow a consistent style (formatting), code analysis (linting), and execution of tests.
+This is a standardized C++/Python project template for DALSA projects that will be hosted on GitHub, designed to help project owners quickly set up new projects with a consistent structure and DevOps features. Its goal is to ensure maintainability and collaboration by enforcing standards that make future contributions and usage seamless. The template integrates **Sphinx** + **Doxygen** for unified documentation of both C++ and Python packages, and uses GitHub Actions to automate the generation of web-based documentation, code rewrites to follow a consistent style (formatting), and code analysis (linting).
 This template introduces a certain structure so that users and contributors can quickly understand your project.
 
 --- 
@@ -9,8 +9,8 @@ This template introduces a certain structure so that users and contributors can 
 
     .
     ├── lib/               # Library for C++ and Python packages
-    │   ├── cpp_pkg/       # C++ package
-    │   └── py_pkg/        # Python package 
+    │   ├── cpp_pkg/       # Dummy C++ package
+    │   └── py_pkg/        # Dummy Python package 
     ├── docs/              # Documentation built by Sphinx + Doxygen via Breathe
         ├── architecture/  # Component-based documentation
         ├── code/          # Code-based documentation
@@ -37,9 +37,9 @@ All documentation, on the other hand, is stored in `docs/`. Documentation is a c
   - Generates **XML output** used by **Breathe**, a bridge that lets **Sphinx** include C++ documentation.
 
 ### GitHub Actions
-- **Linting**: Automatic linting (ruff for Python, clang-tidy for C++)  
-- **Formatting**: Automatic styling (ruff format for Python, clang-format for C++)  
-- **Documentation**: Automatic build and deployment to GitHub Pages  
+- **Formatting**: Automatic styling (ruff format for Python, clang-format for C++) before merging into main
+- **Linting**: Automatic linting (ruff for Python, clang-tidy for C++) before merging into main
+- **Documentation**: Automatic build and deployment to GitHub Pages after merging into main
 
 ## Before Using This Template
 If you haven't done so already, check the following:  

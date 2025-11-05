@@ -162,4 +162,4 @@ In order to quickly start working with the project and provide value for users, 
    sphinx-build -b html docs build/html
    ``` 
 5. Push changes – GitHub Actions will automatically:
-   - Build and deploy documentation
+   - Build and deploy documentation when successfully merging into main
