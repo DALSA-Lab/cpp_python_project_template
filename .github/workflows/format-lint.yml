@@ -1,4 +1,4 @@
-name: Lint and Format
+name: Format and Lint
 
 on: [push, pull_request]
 
