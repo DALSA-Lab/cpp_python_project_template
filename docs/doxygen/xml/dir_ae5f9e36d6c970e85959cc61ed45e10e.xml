@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_ae5f9e36d6c970e85959cc61ed45e10e" kind="dir">
+    <compoundname>src/cpppkg/src</compoundname>
+    <innerfile refid="sample_8cpp">sample.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cpppkg/src/"/>
+  </compounddef>
+</doxygen>

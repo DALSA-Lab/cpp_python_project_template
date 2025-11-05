@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classcpppkg_1_1_calculator" kind="class" language="C++" prot="public">
+    <compoundname>cpppkg::Calculator</compoundname>
+    <includes refid="sample_8h" local="no">sample.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpppkg_1_1_calculator_1a8d8beaee5ee877020973701e9619e956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cpppkg::Calculator::add</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>add</name>
+        <qualifiedname>cpppkg::Calculator::add</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Adds two integers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First integer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second integer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of a and b. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cpppkg/include/sample.h" line="15" column="9" bodyfile="src/cpppkg/src/sample.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpppkg_1_1_calculator_1ada31a615f54673c3bf3eccfe97264eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cpppkg::Calculator::multiply</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>multiply</name>
+        <qualifiedname>cpppkg::Calculator::multiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies two integers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First integer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second integer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The product of a and b. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cpppkg/include/sample.h" line="23" column="9" bodyfile="src/cpppkg/src/sample.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A simple calculator class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cpppkg/include/sample.h" line="7" column="1" bodyfile="src/cpppkg/include/sample.h" bodystart="7" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classcpppkg_1_1_calculator_1a8d8beaee5ee877020973701e9619e956" prot="public" virt="non-virtual"><scope>cpppkg::Calculator</scope><name>add</name></member>
+      <member refid="classcpppkg_1_1_calculator_1ada31a615f54673c3bf3eccfe97264eb9" prot="public" virt="non-virtual"><scope>cpppkg::Calculator</scope><name>multiply</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

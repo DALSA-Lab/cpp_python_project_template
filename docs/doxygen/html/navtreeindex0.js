@@ -1,0 +1,24 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[0,0],
+"classes.html":[0,1],
+"classmath__utils_1_1_calculator.html":[0,0,0,0],
+"classmath__utils_1_1_calculator.html#a1ac410555bdef0e7d1d6856eb65a8623":[0,0,0,0,0],
+"classmath__utils_1_1_calculator.html#a4761e091532dd7b2b3aa5b05d462e745":[0,0,0,0,3],
+"classmath__utils_1_1_calculator.html#a9d94459903e96e34ed80b3267e55da27":[0,0,0,0,2],
+"classmath__utils_1_1_calculator.html#abc237c0b76a0bcb0361bfe201b728465":[0,0,0,0,1],
+"classstring__utils_1_1_formatter.html":[0,0,1,0],
+"classstring__utils_1_1_formatter.html#a72c83ffa1f6f2564f47f70137d215d56":[0,0,1,0,0],
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[1,0,0],
+"dir_6f8b1b6f986a303525dc35d8218f7003.html":[1,0,0,0],
+"dir_c69c8bd29bd3a83e36667cbdf9edaa3b.html":[1,0,0,0,0],
+"files.html":[1,0],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"index.html":[],
+"math__utils_8hpp.html":[1,0,0,0,0,0],
+"math__utils_8hpp_source.html":[1,0,0,0,0,0],
+"pages.html":[],
+"string__utils_8hpp.html":[1,0,0,0,0,1],
+"string__utils_8hpp_source.html":[1,0,0,0,0,1]
+};

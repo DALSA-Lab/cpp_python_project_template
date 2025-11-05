@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_6f8b1b6f986a303525dc35d8218f7003" kind="dir">
+    <compoundname>src/cpp_pkg</compoundname>
+    <innerdir refid="dir_c69c8bd29bd3a83e36667cbdf9edaa3b">src/cpp_pkg/include</innerdir>
+    <innerdir refid="dir_dc130d65b69c161f9c96cbc86a44ccd1">src/cpp_pkg/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cpp_pkg/"/>
+  </compounddef>
+</doxygen>

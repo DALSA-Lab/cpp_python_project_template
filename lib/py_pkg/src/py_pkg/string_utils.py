@@ -1,5 +1,5 @@
 """
-math_utils.py - A dummy module for demonstration
+string_utils.py - A dummy module for demonstration
 """
 
 DEFAULT_GREETING = "Hello"
