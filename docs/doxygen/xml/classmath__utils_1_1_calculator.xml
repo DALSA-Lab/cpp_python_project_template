@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/cpp_pkg/include/math_utils.hpp" line="31" column="16" bodyfile="src/cpp_pkg/src/math_utils.cpp" bodystart="10" bodyend="12"/>
+        <location file="lib/cpp_pkg/include/math_utils.hpp" line="31" column="10" bodyfile="lib/cpp_pkg/src/math_utils.cpp" bodystart="8" bodyend="8"/>
       </memberdef>
       <memberdef kind="function" id="classmath__utils_1_1_calculator_1a4761e091532dd7b2b3aa5b05d462e745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/cpp_pkg/include/math_utils.hpp" line="39" column="16" bodyfile="src/cpp_pkg/src/math_utils.cpp" bodystart="14" bodyend="16"/>
+        <location file="lib/cpp_pkg/include/math_utils.hpp" line="39" column="10" bodyfile="lib/cpp_pkg/src/math_utils.cpp" bodystart="10" bodyend="10"/>
       </memberdef>
       <memberdef kind="function" id="classmath__utils_1_1_calculator_1a9d94459903e96e34ed80b3267e55da27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/cpp_pkg/include/math_utils.hpp" line="47" column="16" bodyfile="src/cpp_pkg/src/math_utils.cpp" bodystart="18" bodyend="20"/>
+        <location file="lib/cpp_pkg/include/math_utils.hpp" line="47" column="10" bodyfile="lib/cpp_pkg/src/math_utils.cpp" bodystart="12" bodyend="12"/>
       </memberdef>
       <memberdef kind="function" id="classmath__utils_1_1_calculator_1abc237c0b76a0bcb0361bfe201b728465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/cpp_pkg/include/math_utils.hpp" line="56" column="16" bodyfile="src/cpp_pkg/src/math_utils.cpp" bodystart="22" bodyend="27"/>
+        <location file="lib/cpp_pkg/include/math_utils.hpp" line="56" column="10" bodyfile="lib/cpp_pkg/src/math_utils.cpp" bodystart="14" bodyend="19"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -191,7 +191,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/cpp_pkg/include/math_utils.hpp" line="23" column="5" bodyfile="src/cpp_pkg/include/math_utils.hpp" bodystart="23" bodyend="57"/>
+    <location file="lib/cpp_pkg/include/math_utils.hpp" line="23" column="1" bodyfile="lib/cpp_pkg/include/math_utils.hpp" bodystart="23" bodyend="57"/>
     <listofallmembers>
       <member refid="classmath__utils_1_1_calculator_1a1ac410555bdef0e7d1d6856eb65a8623" prot="public" virt="non-virtual"><scope>math_utils::Calculator</scope><name>add</name></member>
       <member refid="classmath__utils_1_1_calculator_1abc237c0b76a0bcb0361bfe201b728465" prot="public" virt="non-virtual"><scope>math_utils::Calculator</scope><name>divide</name></member>

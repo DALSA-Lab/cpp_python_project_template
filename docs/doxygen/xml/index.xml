@@ -25,12 +25,12 @@
   </compound>
   <compound refid="string__utils_8cpp" kind="file"><name>string_utils.cpp</name>
   </compound>
-  <compound refid="dir_6f8b1b6f986a303525dc35d8218f7003" kind="dir"><name>src/cpp_pkg</name>
+  <compound refid="dir_abbbdf32378d28d1c3aa8a91b3abe1c0" kind="dir"><name>lib/cpp_pkg</name>
   </compound>
-  <compound refid="dir_c69c8bd29bd3a83e36667cbdf9edaa3b" kind="dir"><name>src/cpp_pkg/include</name>
+  <compound refid="dir_93e8756b682c3e239c9cbf8e72d3aa62" kind="dir"><name>lib/cpp_pkg/include</name>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
   </compound>
-  <compound refid="dir_dc130d65b69c161f9c96cbc86a44ccd1" kind="dir"><name>src/cpp_pkg/src</name>
+  <compound refid="dir_5994212e0c7b0ba1796e56179c2444a2" kind="dir"><name>lib/cpp_pkg/src</name>
   </compound>
 </doxygenindex>
