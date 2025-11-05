@@ -45,6 +45,7 @@ All documentation, on the other hand, is stored in `docs/`. Documentation is a c
 If you haven't done so already, check:  
 - [Docs](/docs/) and learn how our project documentation is structured in `rst` and `md` files.
 - [Lib](/lib/) and learn how to work with packages.
+- [Docs Webpage](https://dalsa-lab.github.io/cpp_python_project_template/)
 
 Do you think that's not enough? If not, then checking the following is highly recommended:
 - [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html) (explore **reStructuredText Primer**, **Roles**, and **Directives**).
