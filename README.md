@@ -45,15 +45,15 @@ All documentation, on the other hand, is stored in `docs/`. Documentation is a c
 If you haven't done so already, check:  
 - [Docs](/docs/) and learn how our project documentation is structured in `rst` and `md` files.
 - [Lib](/lib/) and learn how to work with packages.
-- [Docs Webpage](https://dalsa-lab.github.io/cpp_python_project_template/)
+- [Docs Webpage](https://dalsa-lab.github.io/cpp_python_project_template/).
 
 Do you think that's not enough? If not, then checking the following is highly recommended:
-- [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html) (explore **reStructuredText Primer**, **Roles**, and **Directives**).
-- [Sphinx Extensions](https://www.sphinx-doc.org/en/master/usage/extensions/index.html).
-- [NumPy Style Guide](https://numpydoc.readthedocs.io/en/latest/format.html).
-- [Doxygen Documenting Code Guide](https://www.doxygen.nl/manual/docblocks.html).
-- Check [Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/index.html) and [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html).
-- Check [Ruff](https://docs.astral.sh/ruff/).
+- [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html) (explore **reStructuredText Primer**, **Roles**, and **Directives**)
+- [Sphinx Extensions](https://www.sphinx-doc.org/en/master/usage/extensions/index.html)
+- [NumPy Style Guide](https://numpydoc.readthedocs.io/en/latest/format.html)
+- [Doxygen Documenting Code Guide](https://www.doxygen.nl/manual/docblocks.html)
+- [Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/index.html) and [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html)
+- [Ruff](https://docs.astral.sh/ruff/)
 
 ## To Produce Documentation Locally: 
 Assuming you are in the root directory of this project and have a Python envioment to work with:
