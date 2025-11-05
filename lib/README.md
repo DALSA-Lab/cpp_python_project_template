@@ -150,7 +150,7 @@ This allows automatic documentation generation via **Sphinx** and **GitHub Actio
 
 Write tests using your preferred framework. This template does not enforce any strict requirements for testing, allowing developers to focus more on writing and improving the core functionality. However, it is strongly recommended to test the most critical and foundational parts of your packages. In this way, in case of contributions, any new code added should not break existing functionality or introduce regressions. Well-tested core components act as a safety net, ensuring that changes are reliable and maintainable. They also help contributors understand the expected behavior and integration points of your package.
 
-> **Important**: Code must be tested before merging to `main`. If new code is added, corresponding tests must be created. This ensures structured contributions and avoids regressions.
+> **Important**: Code must be tested before merging into `main`. If new code is added, corresponding tests must be created. This ensures structured contributions and avoids regressions.
 
 ---
 
