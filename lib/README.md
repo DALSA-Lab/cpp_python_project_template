@@ -80,28 +80,28 @@ Together, being **modular** and **self-contained** ensures that each package can
 - **Build System**: CMake
 - **Compiler**: Clang (installed via LLVM)
 - **Build Tool**: Ninja
-- **Linting**: `clang-tidy`
 - **Formatting**: `clang-format`
+- **Linting**: `clang-tidy`
 
 > If you want to use the same tools (CMake, Clang and Ninja), make sure to install them in your machine.
 
 Assuming you are in the root directory of the package:
-
-To build (with liniting):
-```bash
-cmake  -S . -B build -G "Ninja" -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_CXX_CLANG_TIDY="clang-tidy;-header-filter=.;-checks=*;"
-cmake --build build
-```
 
 To format:
 ```bash
 clang-format -i src/*.cpp include/*.hpp
 ```
 
+To build (with linting):
+```bash
+cmake  -S . -B build -G "Ninja" -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_CXX_CLANG_TIDY="clang-tidy;-header-filter=.;-checks=*;"
+cmake --build build
+```
+
 ### Python (`py_pkg`)
 - **Packaging and Dependency Management Tool**: Poetry
 - **Configuration Tool**: pyproject.toml
-- **Linting & Formatting**: Ruff
+- **Formatting & Linting**: Ruff
 
 > Remember that with Python no build step is required.
 
@@ -124,10 +124,10 @@ And then activate it (on Windows via CMD):
 "myenv/Scripts/activate.bat"
 ```
 
-To lint and format:
+To format and lint:
 ```bash
+ruff format .
 ruff check .
-ruff check . --fix
 ```
 
 You can also build your project into a distributable format (wheel and source tarball):

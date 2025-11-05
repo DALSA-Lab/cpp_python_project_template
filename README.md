@@ -1,6 +1,6 @@
 # C++/Python Project Template
 
-This is a standardized C++/Python project template for DALSA projects that will be hosted on GitHub, designed to help project owners quickly set up new projects with a consistent structure and DevOps features. Its goal is to ensure maintainability and collaboration by enforcing standards that make future contributions and usage seamless. The template integrates **Sphinx** + **Doxygen** for unified documentation of both C++ and Python packages, and uses GitHub Actions to automate the generation of web-based documentation, code analysis (linting), code rewrites to follow a consistent style (formatting), and execution of tests.
+This is a standardized C++/Python project template for DALSA projects that will be hosted on GitHub, designed to help project owners quickly set up new projects with a consistent structure and DevOps features. Its goal is to ensure maintainability and collaboration by enforcing standards that make future contributions and usage seamless. The template integrates **Sphinx** + **Doxygen** for unified documentation of both C++ and Python packages, and uses GitHub Actions to automate the generation of web-based documentation, code rewrites to follow a consistent style (formatting), code analysis (linting), and execution of tests.
 This template introduces a certain structure so that users and contributors can quickly understand your project.
 
 --- 
