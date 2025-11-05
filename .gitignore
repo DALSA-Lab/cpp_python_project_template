@@ -70,10 +70,6 @@ instance/
 # Sphinx documentation
 docs/_build/
 
-# Doxygen documentation
-docs/doxygen/
-
-
 # PyBuilder
 .pybuilder/
 target/
