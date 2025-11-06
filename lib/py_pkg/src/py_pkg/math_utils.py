@@ -1,13 +1,10 @@
-"""
-math_utils.py - A dummy module for demonstration
-"""
+"""math_utils.py - A dummy module for demonstration."""
 
 PI = 3.14159
 
 
 def square(x):
-    """
-    Calculate the square of a number.
+    """Calculate the square of a number.
 
     Parameters
     ----------
@@ -18,18 +15,16 @@ def square(x):
     -------
     float or int
         The square of the input number.
+
     """
     return x * x
 
 
 class Calculator:
-    """
-    A simple calculator class for basic arithmetic operations.
-    """
+    """A simple calculator class for basic arithmetic operations."""
 
     def add(self, a, b):
-        """
-        Add two numbers.
+        """Add two numbers.
 
         Parameters
         ----------
@@ -42,12 +37,12 @@ class Calculator:
         -------
         float or int
             The sum of a and b.
+
         """
         return a + b
 
     def subtract(self, a, b):
-        """
-        Subtract one number from another.
+        """Subtract one number from another.
 
         Parameters
         ----------
@@ -60,12 +55,12 @@ class Calculator:
         -------
         float or int
             The result of a - b.
+
         """
         return a - b
 
     def multiply(self, a, b):
-        """
-        Multiply two numbers.
+        """Multiply two numbers.
 
         Parameters
         ----------
@@ -78,12 +73,12 @@ class Calculator:
         -------
         float or int
             The product of a and b.
+
         """
         return a * b
 
     def divide(self, a, b):
-        """
-        Divide one number by another.
+        """Divide one number by another.
 
         Parameters
         ----------
@@ -101,6 +96,7 @@ class Calculator:
         ------
         ValueError
             If b is zero.
+
         """
         if b == 0:
             raise ValueError("Cannot divide by zero.")
