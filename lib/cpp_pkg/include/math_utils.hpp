@@ -10,11 +10,7 @@ namespace math_utils {
 /// The mathematical constant pi.
 constexpr double PI = 3.14159;
 
-/**
- * @brief Calculate the square of a number.
- * @param x The number to be squared.
- * @return The square of the input number.
- */
+
 double square(double x);
 
 /**
