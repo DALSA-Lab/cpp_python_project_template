@@ -17,7 +17,7 @@ This template introduces a certain structure so that users and contributors can 
         └── usage/         # Examples and tutorials
 
 All code is stored in `lib/` and organized into packages, either C++ or Python packages.\
-All documentation, on the other hand, is stored in `docs/`. Documentation is a crucial aspect of this template. Using **Sphinx** with **Doxygen** via **Breathe**, code documentation is automated based on docstrings/comments and enriched with more info provided by the developers using **reStructuredText (reST)**. Together with GitHub Actions, this allows enforcement of consistent documentation practices across Python and C++ codebases. In this way:
+All documentation, on the other hand, is stored in `docs/`. Documentation is a crucial aspect of this template. Using **Sphinx** with **Doxygen** via **Breathe**, code documentation is automated based on comments/docstrings and enriched with more info provided by the developers using **reStructuredText (reST)**. Together with GitHub Actions, this allows enforcement of consistent documentation practices across C++ and Python codebases. In this way:
 
 *   Documentation stays up-to-date with code changes.
 *   Documentation is organized and easily navigable.
@@ -28,9 +28,9 @@ All documentation, on the other hand, is stored in `docs/`. Documentation is a c
 ## Main Features
 
 ### Documentation Tools
-- **Sphinx** — Primary tool for generating project documentation  
-  - Supports both **reStructuredText (.rst)** and **Markdown (.md)** formats. 
+- **Sphinx** — Primary tool for generating project documentation
   - Primarily uses reStructuredText, including its directives and extensions to produce documentation.
+  - Supports both **reStructuredText (.rst)** and **Markdown (.md)** formats. 
 
 - **Doxygen** — Specialized for C++ code documentation  
   - Produces **HTML output** for standalone C++ docs (found in `docs/doxygen/html`).
@@ -39,7 +39,7 @@ All documentation, on the other hand, is stored in `docs/`. Documentation is a c
 ### GitHub Actions
 - **Formatting**: Automatic styling (ruff format for Python, clang-format for C++) before merging into main
 - **Linting**: Automatic linting (ruff for Python, clang-tidy for C++) before merging into main
-- **Documentation**: Automatic build and deployment to GitHub Pages after merging into main
+- **Documentation**: Automatic build and deployment to GitHub Pages when updating main
 
 ## Before Using This Template
 If you haven't done so already, check the following:  
@@ -53,16 +53,45 @@ Do you think that's not enough? If not, then checking the following is highly re
 - [NumPy Style Guide](https://numpydoc.readthedocs.io/en/latest/format.html)
 - [Doxygen Documenting Code Guide](https://www.doxygen.nl/manual/docblocks.html)
 - [Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/index.html) and [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html)
-- [Ruff](https://docs.astral.sh/ruff/)
+- [Ruff Formatter](https://docs.astral.sh/ruff/formatter/) and [Ruff Linter](https://docs.astral.sh/ruff/linter/)
 
 ## To Produce Documentation Locally: 
 Assuming you are in the root directory of this project and have a Python envioment to work with:
 1. Install Python dependencies:  
    ```bash
     pip install -r requirements-docs.txt
+   ```
+2. Install Doxygen from [here](https://www.doxygen.nl/download.html).
+3. Build your documentation
+   ```bash
     doxygen Doxyfile # If there are any C++ packages
     sphinx-build -b html docs build/html
    ```
+
+## Maintaining Your Code
+When using this template, repository-level rulesets are NOT copied into the new repository. Project owners must configure these protections themselves in the repository settings.
+
+Why protect main?
+- Prevents direct pushes and accidental changes to main.
+- Ensures CI (formatting, linting, testing, etc) runs and passes before code is merged.
+- Keeps main stable for releases and documentation builds.
+
+Template's Linting / formatting behavior
+- The template’s GitHub Actions jobs for formatting and linting are intended to run on pull requests.
+- Only merge into main after the required status checks pass on the PR.
+
+Recommended minimal branch-protection rule (GitHub: Settings → Branches → Add branch ruleset) on the main branch:
+- Restrict deletions
+- Require a pull request before merging
+  - Require review from Code Owners
+  - Require conversation resolution before merging
+- Require status checks to pass (select cpp-format-lint and python-format-lint)
+  - Require branches to be up to date before merging
+  - Do not require status checks on creation
+- Block force pushes
+- Optionally enable: include administrators, require linear history
+
+At minimum, create a rule that enforces updates to main only via pull requests with passing status checks.
 
 ## License
 This template is licensed under the terms in `LICENSE`.

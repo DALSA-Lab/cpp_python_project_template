@@ -6,19 +6,7 @@ PI = 3.14159
 
 
 def square(x):
-    """
-    Calculate the square of a number.
 
-    Parameters
-    ----------
-    x : float or int
-        The number to be squared.
-
-    Returns
-    -------
-    float or int
-        The square of the input number.
-    """
     return x * x
 
 

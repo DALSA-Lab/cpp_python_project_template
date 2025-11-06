@@ -120,10 +120,10 @@
   <option  id='WARN_IF_UNDOCUMENTED' default='yes' type='bool'><value>YES</value></option>
   <option  id='WARN_IF_DOC_ERROR' default='yes' type='bool'><value>YES</value></option>
   <option  id='WARN_IF_INCOMPLETE_DOC' default='yes' type='bool'><value>YES</value></option>
-  <option  id='WARN_NO_PARAMDOC' default='yes' type='bool'><value>NO</value></option>
+  <option  id='WARN_NO_PARAMDOC' default='no' type='bool'><value>YES</value></option>
   <option  id='WARN_IF_UNDOC_ENUM_VAL' default='yes' type='bool'><value>NO</value></option>
   <option  id='WARN_LAYOUT_FILE' default='yes' type='bool'><value>YES</value></option>
-  <option  id='WARN_AS_ERROR' default='yes' type='string'><value>NO</value></option>
+  <option  id='WARN_AS_ERROR' default='no' type='string'><value>YES</value></option>
   <option  id='WARN_FORMAT' default='yes' type='string'><value><![CDATA["$file:$line: $text"]]></value></option>
   <option  id='WARN_LINE_FORMAT' default='yes' type='string'><value><![CDATA["at line $line of file $file"]]></value></option>
   <option  id='WARN_LOGFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
