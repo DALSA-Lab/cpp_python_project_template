@@ -53,7 +53,7 @@ py_pkg
 This follows a typical Python project layout: (`poetry new py_pkg` was used to create the layout)
 
 - `pyproject.toml`  for package configuration
-- `src/` for implementation (actual Python package lives in src/py_pkg/)
+- `src/` for implementation (actual Python package lives in `src/py_pkg/`)
 - `tests/` for testing
 - `README.md` for package introductions
 
@@ -61,16 +61,16 @@ This follows a typical Python project layout: (`poetry new py_pkg` was used to c
 
 > Remember, you can customize the layout of your package as much as needed to suit your specific requirements. The only requirement is that each package you create must be **modular** and **self-contained**.
 
-A **modular** package is designed to encapsulate a specific functionality or domain, making it easy to understand, maintain, and reuse independently or as part of a larger system. It should expose clear interfaces and avoid unnecessary coupling with other packages.
+A ***modular*** package is designed to encapsulate a specific functionality or domain, making it easy to understand, maintain, and reuse independently or as part of a larger system. It should expose clear interfaces and avoid unnecessary coupling with other packages.
 
-A **self-contained** package means it includes everything necessary to build, run, test, and document itself without relying on external parts of the repository. This typically includes:
+A ***self-contained*** package means it includes everything necessary to build, run, test, and document itself without relying on external parts of the repository. This typically includes:
 - Its own source code
 - Build or configuration files (e.g., `CMakeLists.txt` or `pyproject.toml`)
 - Tests
 - Documentation (e.g., `README.md`)
 - Instructions or mechanisms for installing dependencies
 
-Together, being **modular** and **self-contained** ensures that each package can be developed, tested, and deployed independently, which improves maintainability, scalability, and collaboration across teams.
+Together, being ***modular*** and ***self-contained*** ensures that each package can be developed, tested, and deployed independently, which improves maintainability, scalability, and collaboration across teams.
 
 ---
 
@@ -83,7 +83,7 @@ Together, being **modular** and **self-contained** ensures that each package can
 - **Formatting**: `clang-format`
 - **Linting**: `clang-tidy`
 
-> If you want to use the same tools (CMake, Clang and Ninja), make sure to install them in your machine.
+> If you want to try building the same we did, make sure to install CMake, Clang and Ninja in your machine.
 
 Assuming you are in the root directory of the package:
 
@@ -98,6 +98,8 @@ cmake  -S . -B build -G "Ninja" -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=cl
 cmake --build build
 ```
 
+---
+
 ### Python (`py_pkg`)
 - **Packaging and Dependency Management Tool**: Poetry
 - **Configuration Tool**: pyproject.toml
@@ -105,7 +107,7 @@ cmake --build build
 
 > Remember that with Python no build step is required.
 
-Assuming you are in the root directory of the package:
+Assuming you are in the root directory of the package and have a Python envioment to work with:
 
 To install the package:
 ```bash
@@ -157,7 +159,32 @@ Write tests using your preferred framework. This template does not enforce any s
 ## Development Golden Rules
 
 - Always keep your packages **modular** and **self-contained**.
-- Document your code as much as possible.
+- Document your code.
 - Format and lint (This step can make you to refactor your code).
-- Write tests for any new functionality you add and check whehter it behaves as expected.
-- (Advacnced) Use GitHub Actions to enforce quality gates.
+- Write tests for any new functionality you add and check whether it behaves as expected.
+- (Advacnced) Use GitHub Actions to enforce functional gates.
+
+---
+
+## DevOps
+
+This template integrates GitHub Actions to automate common DevOps tasks for both C++ and Python packages. Changes to main must be made via pull requests so CI can run the automated jobs that format, lint, and validate code and documentation before merging.
+
+How it works
+- On every pull request the workflow searches the repository for packages:
+  - A C++ package is identified by a `CMakeLists.txt` file.
+  - A Python package is identified by a `pyproject.toml` file.
+- For each discovered package the jobs:
+  - Format source files (`clang-format` for C++, `ruff format` for Python).
+  - Run linters (`clang-tidy` for C++, `ruff check` for Python).
+    - *This also includes checking documentation completeness and correctness. Note that Clang does not have a straight forward way to do so; however, Doxygen has. So, Doxygen is used to produce documentation, and warnings like documentation is not available are treated as errors.*
+- If linting find errors, the related status checks fail and GitHub will block merging the pull request until the issues are fixed.
+
+Why this matters
+- Prevents regressions by enforcing checks on every change.
+- Keeps main stable and ready for releases.
+- Ensures contributors address any issues early in the review cycle rather than after merging.
+
+Recommendation
+- Do not push directly to main. Require pull requests and configure branch protection rules, so merges are only allowed when the required status checks pass.
+- Ensure each package in the repo is modular and self-contained.

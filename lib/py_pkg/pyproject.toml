@@ -19,6 +19,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
 line-length = 88
-lint.select = ["E", "F", "I", "B"]  # E: pycodestyle, F: pyflakes, I: isort, B: flake8-bugbear
-lint.ignore = ["E501"]
+lint.select = ["E", "F", "I", "B", "D"]  # E: pycodestyle, F: pyflakes, I: isort, B: flake8-bugbear, D: pydocstyle rules
+lint.ignore = ["E501", "D100", "D104"]
 target-version = "py312"
