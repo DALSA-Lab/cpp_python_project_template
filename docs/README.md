@@ -159,7 +159,7 @@ In order to quickly start working with the project and provide value for users, 
      **Sphinx** can access your Python packages based on the paths you specify in `conf.py`.
 
 3. Add any necessary directives, extensions, and content enrichments. See an example here: [cpp_pkg.rst](/docs/code/cpp_pkgs/cpp_pkg.rst).
-4. (Optional) Build docs locally and check them in `/build/html` before pushing:
+4. (Recommended optional) Build docs locally and check them in `/build/html` before pushing:
    ```bash
    doxygen Doxyfile # If there are any C++ packages
    sphinx-build -b html docs build/html
