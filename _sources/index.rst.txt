@@ -8,7 +8,7 @@ Overview
     *A project overview should briefly describe the scope, purpose, and goals of the project. It helps users quickly understand what the project is about and why it exists. 
     When writing an overview, mention the main problem the project solves, its target audience, and any unique features or technologies it uses.*
 
-    ***Example:***
+    *Example:*
 
         *This project provides a stadaridized template for DALSA GitHub repositories, designed to help project owners quickly set up new projects with a consistent structure and DevOps features.
         Its goal is to ensure maintainability and collaboration by enforcing standards that make future contributions and usage seamless. The template integrates Sphinx + Doxygen for unified
