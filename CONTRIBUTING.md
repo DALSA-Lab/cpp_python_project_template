@@ -19,4 +19,4 @@
 - Add/extend tests for every change
 
 ## Documentation
-- Keep `docs/` updated (architecture, API, examples)
+- Keep `docs/` updated.
